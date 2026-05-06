@@ -1,59 +1,93 @@
-# BookRating
+<img src="https://assets.angular.schule/header-tagesworkshop-einstieg.png">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+#### **mit Ferdinand Malcher**
 
-## Development server
+<hr>
 
-To start a local development server, run:
+**Herzlich Willkommen zum Workshop – schön, dass du dabei bist!**  
+In diesem Repository findest du während des Workshops den Quelltext unserer Beispielanwendung.
+
+
+# ✅ Installation
+
+> ⚠️ **Bitte führe die Vorbereitung rechtzeitig VOR dem Workshop aus, damit wir ohne Zeitverlust loslegen können.**
+
+
+## Benötigte Software
+
+1. **Node.js 20, 22 oder 24** (jeweils die aktuelle Nebenversionsnummer): [https://nodejs.org](https://nodejs.org)
+2. **Google Chrome:** [https://www.google.com/chrome/](https://www.google.com/chrome/)
+3. **Visual Studio Code:** [https://code.visualstudio.com](https://code.visualstudio.com)
+4. **Angular Language Service für VS Code:** [Angular Language Service (`Angular.ng-template`)](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+    - Installiere die Extension über den *Extensions Browser* direkt im Editor.
+
+
+## Pakete installieren
+
+Die Angular CLI ist das offizielle Build-Tool für Angular. Mit folgendem Befehl kannst Du die CLI auf dem System installieren:
+
+```
+npm install --location=global @angular/cli
+```
+
+⚠️ Überprüfe bitte anschließend die Versionen, damit wir beim Workshop alle auf dem gleichen Stand sind.
+
+```
+node -v
+# Erwartet:
+# 20.19.x oder höher, 22.12.x oder höher, oder 24.0.x oder höher,
+# aber nicht 21.x oder 23.x!
+
+ng version
+# Erwartet:
+# Angular CLI : 21.x.x (!)
+# Angular     : 21.x.x (!)
+```
+
+
+## Projekt installieren
+
+Wir haben bereits ein Projekt vorbereitet, mit dem wir im Workshop arbeiten werden.
+Bitte klone dieses Repo *oder* [lade den Code als ZIP herunter](https://github.com/angular-schule/2026-05-angular-workshop-htwk-leipzig/archive/refs/heads/main.zip).
+
+Anschließend kannst Du das Angular-Projekt auf deinem Rechner installieren:
+
+```bash
+cd 2026-05-angular-workshop-htwk-leipzig
+npm install
+```
+
+Die Installation kann bei langsamer Internetverbindung sehr lange dauern.
+Warte das `npm install` mit Geduld ab!
+
+Anschließend kannst du das Projekt starten:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Auf http://localhost:4200 sollte nun die Anwendung mit der Überschrift "Hello world" erscheinen.
+Den laufenden Webserver kannst Du danach mit Strg + C beenden.
 
-## Code scaffolding
+Wenn bei allen Teilnehmenden das Grundgerüst steht, können wir ohne Zeitverlust loslegen.
+Sollte es zu einem Fehler kommen, melde dich einfach per Mail bei uns unter [team@angular.schule](mailto:team@angular.schule).  
+Wir werden schnell eine Lösung finden.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Projekt erforschen
 
-```bash
-ng generate component component-name
-```
+Öffne den Projektordner `book-rating` in deinem Editor.
+Nimm dir nun ein paar Minuten Zeit, um die Struktur des generierten Projekts zu untersuchen.
+So hast du die wichtigsten Dateien schon einmal gesehen, bevor wir den Aufbau in der Schulung besprechen!
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
 
-## Building
+### Wir freuen uns schon! 🙂
 
-To build the project run:
+<hr>
 
-```bash
-ng build
-```
+<img src="http://assets.angular.schule/logo-angular-schule.png" height="60">
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### &copy; https://angular.schule | Stand: 06.05.2026
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
