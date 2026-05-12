@@ -24,6 +24,30 @@ export class BookStore {
         rating: 3,
         price: 32.9
       },
+      {
+        isbn: '987654',
+        title: 'React',
+        description: 'Komponenten und Hooks',
+        authors: ['JS'],
+        rating: 4,
+        price: 35.9
+      },
+      {
+        isbn: '123456',
+        title: 'Svelte',
+        description: 'Compiler-basiertes Framework',
+        authors: ['RH'],
+        rating: 4,
+        price: 29.9
+      },
+      {
+        isbn: '555111',
+        title: 'TypeScript',
+        description: 'Typsicheres JavaScript',
+        authors: ['AH'],
+        rating: 5,
+        price: 42.9
+      },
     ];
 
   }
