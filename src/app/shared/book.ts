@@ -2,5 +2,7 @@ export interface Book {
     isbn: string;
     title: string;
     price: number;
-    // ... TODO
+    authors: string[];
+    description: string;
+    rating: number;
 }
