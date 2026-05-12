@@ -1,3 +1,5 @@
+<app-cart-display [books]="cart()" />
+
 @for (b of books(); track b.isbn) {
-    <app-book-card [book]="b" />
+    <app-book-card [book]="b" (cartAdd)="addToCart($event)" />
 }

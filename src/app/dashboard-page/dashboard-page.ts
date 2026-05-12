@@ -1,15 +1,19 @@
 import { Component, signal } from '@angular/core';
 import { Book } from '../shared/book';
 import { BookCard } from "../book-card/book-card";
+import { CartDisplay } from "../cart-display/cart-display";
 
 @Component({
   selector: 'app-dashboard-page',
-  imports: [BookCard],
+  imports: [BookCard, CartDisplay],
   templateUrl: './dashboard-page.html',
   styleUrl: './dashboard-page.scss',
 })
 export class DashboardPage {
   protected books = signal<Book[]>([]);
+  protected cart = signal<Book[]>([]);
+
+  foo = signal(5);
 
   constructor() {
     this.books.set([
@@ -30,5 +34,12 @@ export class DashboardPage {
         price: 32.9
       },
     ]);
+  }
+
+  addToCart(book: Book) {
+    this.cart.update(currentCart => {
+      // Achtung: Immutability
+      return [book, ...currentCart];
+    });
   }
 }
