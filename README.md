@@ -75,7 +75,7 @@ Wir werden schnell eine Lösung finden.
 
 ## Projekt erforschen
 
-Öffne den Projektordner `book-rating` in deinem Editor.
+Öffne den Projektordner `2026-05-angular-workshop-htwk-leipzig` in deinem Editor.
 Nimm dir nun ein paar Minuten Zeit, um die Struktur des generierten Projekts zu untersuchen.
 So hast du die wichtigsten Dateien schon einmal gesehen, bevor wir den Aufbau in der Schulung besprechen!
 
